@@ -1,0 +1,21 @@
+﻿@model Fluid.Plugins.CookieDisclaime.CookieInfo
+
+<script>
+
+    //var isThridPartEnable = uCookie_frontend_gdpr_scripts.enabled_default;
+
+</script>
+
+@if (Model != null && Model.EnableCookieBar)
+{
+    if (Model.ThrdPartyTurn && Model.ThrdPartyStatus)
+    {
+        @Html.Raw(Model.ThrdPartyHeaderSection)
+    }
+
+
+    if (Model.AdditionalTurn && Model.AdditionalStatus)
+    {
+        @Html.Raw(Model.AdditionalHeaderSection)
+    }
+}

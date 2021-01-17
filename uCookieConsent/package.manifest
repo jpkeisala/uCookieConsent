@@ -1,0 +1,9 @@
+﻿{
+  "javascript": [
+    "~/App_Plugins/CookieDisclaime/backoffice/cookiesAlias/overview.controller.js",
+    "~/App_Plugins/CookieDisclaime/backoffice/cookiesAlias/overview.js"
+  ],
+  "css": [
+    "~/App_Plugins/CookieDisclaime/backoffice/cookiesAlias/overview.css"
+  ]
+}

@@ -1,0 +1,302 @@
+﻿#CookieDisclaime .ipsum {
+    margin: 10px 0;
+}
+
+#CookieDisclaime .ipsum-search {
+    margin: 10px 0;
+}
+
+#CookieDisclaime .umb-panel-group__details-check-description {
+    overflow-y: auto;
+}
+
+#CookieDisclaime .sub-view-column-left {
+    margin-right: 5px;
+}
+
+
+#CookieDisclaime #contentwrapper {
+    overflow: scroll;
+}
+
+#CookieDisclaime .umb-box {
+    background: #f6f4f4;
+    box-shadow: none;
+}
+
+#CookieDisclaime .umb-box-header {
+    border: 0px !important;
+}
+
+#CookieDisclaime ng-transclude {
+    width: 100%;
+}
+
+#CookieDisclaime .umb-box-content {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin-top: 2px;
+}
+
+#CookieDisclaime .content {
+    float: left;
+    width: calc(100% - 100px);
+    /*min-height: 350px;*/
+    margin-left: 20px;
+    border: 1px solid #cccc;
+    /* border-top: 0px;*/
+}
+
+#CookieDisclaime .content-right {
+    float: right;
+    width: 25%;
+    background-color: #f6f4f4;
+    padding: 30px;
+    background: white;
+    min-height: 350px;
+    border: 1px solid #cccc;
+}
+
+#CookieDisclaime .ipsum {
+    margin: 0px;
+}
+
+#CookieDisclaime .ipsum-search {
+    float: left;
+    width: 100%;
+}
+
+    #CookieDisclaime .ipsum-search > label {
+        width: 250px;
+        float: left;
+    }
+
+    #CookieDisclaime .ipsum-search > .fields {
+        width: calc(100% - 260px);
+        float: left;
+    }
+
+    #CookieDisclaime .ipsum-search div > input[type=text],
+    #CookieDisclaime .ipsum-search div > textarea,
+    #CookieDisclaime .ipsum-search div > select {
+        width: 90%;
+        padding: 8px;
+    }
+
+    #CookieDisclaime .ipsum-search div > input {
+        float: left;
+        padding: 8px;
+    }
+
+        #CookieDisclaime .ipsum-search div > input[type=color] {
+            padding: 2px;
+        }
+        #CookieDisclaime .ipsum-search div > label {
+            float: left;
+            margin-right: 12px;
+        }
+
+    #CookieDisclaime .ipsum-search input[type=checkbox],
+    #CookieDisclaime .ipsum-search input[type=radio] {
+        margin: 2px;
+        margin-right: 3px;
+    }
+
+    #CookieDisclaime .ipsum-search > div p {
+        line-height: normal;
+        float: left;
+        margin-bottom: 20px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    #CookieDisclaime .ipsum-search .ipsum-search > label {
+        margin-left: 35px;
+        width: 200px;
+    }
+
+    #CookieDisclaime .ipsum-search .ipsum-search > div {
+        width: calc(100% - 260px);
+        float: left;
+    }
+
+    #CookieDisclaime .ipsum-search .ipsum-search .ipsum-search > label {
+        margin-left: 54px;
+        width: 184px;
+    }
+
+#code .ipsum-search > label {
+    width: 219px;
+}
+
+#btnSave {
+    padding: 15px 20px;
+    border: 0px;
+    border-left: 1px solid #ccc;
+    background-color: #2bc37c;
+    color: white;
+}
+
+#CookieDisclaime body {
+    font-family: Arial;
+}
+
+/* Style the tab */
+#CookieDisclaime .tab {
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    background-color: #f1f1f1;
+    /*      border-bottom-color: #dcd9d9;*/
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
+
+    /* Style the buttons inside the tab */
+    #CookieDisclaime .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 6px;
+        transition: 0.3s;
+        font-size: 17px;
+        width: 13.33333333%;
+        text-align: center;
+        border-right: 1px solid #ddd;
+    }
+        #CookieDisclaime .tab button:last-child {
+            border-right: 0px solid #ddd;
+        }
+        #CookieDisclaime .tab button:nth-child(4) {
+            width: 20%;
+        }
+        /* Change background color of buttons on hover */
+        #CookieDisclaime .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        #CookieDisclaime .tab button.active {
+            background-color: white;
+        }
+        #CookieDisclaime .tab button i {
+            font-size: 25px;
+        }
+
+        /* Style the tab content */
+#CookieDisclaime .tabcontent {
+    display: none;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dcd9d9;
+    border-top: none;
+    float: left;
+    width: 100%;
+    background: white;
+    height: calc(100vh - 296px);
+}
+    #CookieDisclaime .tabcontent h3 {
+        padding-left: 25px;
+        border-bottom: 1px solid #d8d7d9;
+    }
+    #CookieDisclaime .tabcontent > div {
+        padding-left: 25px;
+        overflow-y:auto; 
+        height:calc(100vh - 348px);
+    }
+
+    #CookieDisclaime .childtabcontent {
+        display: none;
+        margin-top: 10px;
+        border-top: 1px solid #ccc;
+    }
+
+#CookieDisclaime .chiltablinks.active {
+    color: dodgerblue;
+}
+
+#CookieDisclaime .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+    #CookieDisclaime .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+#CookieDisclaime .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    #CookieDisclaime .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+#CookieDisclaime input:checked + .slider {
+    background-color: green;
+}
+
+#CookieDisclaime input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+#CookieDisclaime input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+#CookieDisclaime .slider.round {
+    border-radius: 34px;
+}
+
+    #CookieDisclaime .slider.round:before {
+        border-radius: 50%;
+    }
+
+.Choosefunctionality div{
+    float:left;
+    width:100%;
+}
+.left-full {
+    float: left;
+    width: 98% !important;
+}
+.mce-branding {
+    display:none !important;
+}
+#message {
+    padding: 20px;
+    color: #00BCD4;
+}
+.save-button {
+    text-align: right;
+    padding: 0px;
+    margin: 0px !important;
+}

@@ -1,0 +1,410 @@
+﻿<!--<link href="overview.css" rel="stylesheet" />
+<script src="overview.controller.js"></script>
+<script src="overview.js"></script>-->
+
+<div id="CookieDisclaime">
+
+    <umb-box>
+        <umb-box-header>
+            <h3>
+                Cookies Setting
+            </h3>
+        </umb-box-header>
+        <umb-box-content>
+            <div class="ipsum" ng-controller="overview.controller as vm">
+                <div class="content">
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openTopTab(event, 'BannerSetting')">
+                            <i class="icon-settings" aria-hidden="true"></i>
+                            <div>Banner Setting</div>
+                        </button>
+                        <button class="tablinks" onclick="openTopTab(event, 'FloatingButton')">
+                            <i class="icon-thumbnail-list" aria-hidden="true"></i>
+                            <div>Floating Button</div>
+                        </button>
+                        <button class="tablinks" onclick="openTopTab(event, 'PrivacyOverview')">
+                            <i class="icon-unlocked" aria-hidden="true"></i>
+                            <div>Privacy Overview</div>
+                        </button>
+                        <button class="tablinks" onclick="openTopTab(event, 'StrictlyNeccessaryCookies')">
+                            <i class=" icon-firewall" aria-hidden="true"></i>
+                            <div>Strictly Neccessary Cookies</div>
+                        </button>
+                        <button class="tablinks" onclick="openTopTab(event, 'ThrdPartyCookies')">
+                            <i class="icon-globe" aria-hidden="true"></i>
+                            <div>3rd Party Cookies</div>
+                        </button>
+                        <button class="tablinks" onclick="openTopTab(event, 'AdditionalCookies')">
+                            <i class="icon-wall-plug" aria-hidden="true"></i>
+                            <div>Additional Cookies</div>
+                        </button>
+                        <button class="tablinks" onclick="openTopTab(event, 'CookiesPolicy')">
+                            <i class="icon-legal" aria-hidden="true"></i>
+                            <div>Cookies Policy</div>
+                        </button>
+                    </div>
+                    <div style="float: left; width:100%;background-color:white;">
+                        <div id="BannerSetting" class="tabcontent" style="display:block;">
+                            <h3 >BannerSetting</h3>
+                            <div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Enable cookie bar:</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.EnableCookieBar">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Banner Text:</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" name="BannerText" id="BannerText" rows="5" ng-model="vm.Model.BannerText"></textarea>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Accept Button Label:</label>
+                                    <div class="fields">
+                                        <input type="text" name="AcceptButtonLabel" ng-model="vm.Model.AcceptButtonLabel" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Reject Button:</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" ng-model="vm.Model.RejectButton">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Reject Button Label:</label>
+                                    <div class="fields">
+                                        <input type="text" name="RejectButtonLabel" ng-model="vm.Model.RejectButtonLabel" />
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Setting Button:</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" ng-model="vm.Model.SettingButton">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Setting Button Label:</label>
+                                    <div class="fields">
+                                        <input type="text" name="RejectButtonLabel" ng-model="vm.Model.SettingButtonLabel" />
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Close Button:</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" ng-model="vm.Model.CloseButton">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Cookie Banner Position:</label>
+                                    <div class="fields">
+                                        <input type="radio" ng-model="vm.Model.CookieBannerPosition" value="Top"><label>Top</label>
+                                        <input type="radio" ng-model="vm.Model.CookieBannerPosition" value="Bottom"> <label>Bottom</label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Setting Dialog Title:</label>
+                                    <div class="fields">
+                                        <input type="text" name="SettingTitle" ng-model="vm.Model.SettingTitle" />
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Enable All Label:</label>
+                                    <div class="fields">
+                                        <input type="text" name="EnableAllLabel" ng-model="vm.Model.EnableAllLabel" />
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Save Setting Label:</label>
+                                    <div class="fields">
+                                        <input type="text" name="SaveSettingLabel" ng-model="vm.Model.SaveSettingLabel" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="FloatingButton" class="tabcontent">
+                            <h3 >Floating Button</h3>
+                            <div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Floating Button</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.FloatingButtonEnable">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Button Hover Label</label>
+                                    <div class="fields">
+                                        <input type="text" name="ButtonHoverLabel" ng-model="vm.Model.ButtonHoverLabel" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Button Custom Position(CSS)</label>
+                                    <div class="fields">
+                                        <input type="text" name="ButtonCustomPosition" rows="5" ng-model="vm.Model.ButtonCustomPosition"></input>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Visiblity on mobile</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.VisiblityOnMobile">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Button Background Color</label>
+                                    <div class="fields">
+                                        <input type="color" name="ButtonBackgroundColor" rows="5" ng-model="vm.Model.ButtonBackgroundColor" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Button Hover Background Color</label>
+                                    <div class="fields">
+                                        <input type="color" name="ButtonHoverBackgroundColor" ng-model="vm.Model.ButtonHoverBackgroundColor" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Button Font Color</label>
+                                    <div class="fields">
+                                        <input type="color" name="ButtonFontColor" ng-model="vm.Model.ButtonFontColor" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="PrivacyOverview" class="tabcontent">
+                            <h3 >Privacy Overview</h3>
+                            <div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Title</label>
+                                    <div class="fields">
+                                        <input type="text" name="poTabTitle" ng-model="vm.Model.poTabTitle" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Content</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" name="poTabContent" rows="5" ng-model="vm.Model.poTabContent"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="StrictlyNeccessaryCookies" class="tabcontent">
+                            <h3 >Strictly Neccessary Cookies</h3>
+                            <div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Choose functionality</label>
+                                    <div class="fields Choosefunctionality">
+                                        <div>
+                                            <input type="radio" ng-model="vm.Model.Choosefunctionality" checked value="Optional"><label>Optional (user selects their preferenes)</label><br />
+                                        </div>
+                                        <div>
+                                            <input type="radio" ng-model="vm.Model.Choosefunctionality" value="AlwaysEnabled"> <label>Always enabled (user can't disblae it but can see the content)</label><br />
+                                        </div>
+                                        <div>
+                                            <input type="radio" ng-model="vm.Model.Choosefunctionality" value="AlwaysEnabledContentHidden"> <label>Always enabled and content hidden from user</label><br />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Title</label>
+                                    <div class="fields">
+                                        <input type="text" name="snTabTitle" ng-model="vm.Model.snTabTitle" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Content</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" rows="5" name="snTabContent" ng-model="vm.Model.snTabContent"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Warning Message</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" rows="5" name="TabWarningMessage" ng-model="vm.Model.TabWarningMessage"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Strictly Neccessary <br />Required Message</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" name="StrictlyNeccessaryRequiredMessage" rows="5" ng-model="vm.Model.StrictlyNeccessaryRequiredMessage"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="ThrdPartyCookies" class="tabcontent">
+                            <h3 >3rd Party Cookies</h3>
+                            <div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Turn</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.ThrdPartyTurn">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Default Status</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.ThrdPartyStatus">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Title</label>
+                                    <div class="fields">
+                                        <input type="text" name="ThrdPartyTabTitle" ng-model="vm.Model.ThrdPartyTabTitle" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Content</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" name="ThrdPartyTabContent" rows="5" ng-model="vm.Model.ThrdPartyTabContent"></textarea>
+                                    </div>
+                                </div>
+                                <h4 style="float: left; width: 100%; margin-top: 38px;">Past your codes and snippets below. They will be added to all pages if user enables these cookies</h4>
+                                <div id="code" style="padding-left:30px;">
+                                    <div class="ipsum-search">
+                                        <label for="paragraphs">Header Section</label>
+                                        <div class="fields">
+                                            <textarea type="text" name="ThrdPartyHeaderSection" rows="10" ng-model="vm.Model.ThrdPartyHeaderSection"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="ipsum-search">
+                                        <label for="paragraphs">Body Section</label>
+                                        <div class="fields">
+                                            <textarea type="text" name="ThrdPartyBodySection" rows="10" ng-model="vm.Model.ThrdPartyBodySection"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="ipsum-search">
+                                        <label for="paragraphs">Footer Section</label>
+                                        <div class="fields">
+                                            <textarea type="text" name="ThrdPartyFooterSection" rows="10" ng-model="vm.Model.ThrdPartyFooterSection"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="AdditionalCookies" class="tabcontent">
+                            <h3 >Additional Cookies</h3>
+                            <div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Turn</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.AdditionalTurn">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Default Status</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.AdditionalStatus">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Title</label>
+                                    <div class="fields">
+                                        <input type="text" name="AdditionalTabTitle" ng-model="vm.Model.AdditionalTabTitle" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Content</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" name="AdditionalTabContent" rows="5" ng-model="vm.Model.AdditionalTabContent"></textarea>
+                                    </div>
+                                </div>
+                                <h4 style="float: left; width: 100%; margin-top: 38px;">Past your codes and snippets below. They will be added to all pages if user enables these cookies</h4>
+                                <div id="code" style="padding-left:30px;">
+                                    <div class="ipsum-search">
+                                        <label for="paragraphs">Header Section</label>
+                                        <div class="fields">
+                                            <textarea type="text" name="AdditionalHeaderSection" rows="10" ng-model="vm.Model.AdditionalHeaderSection"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="ipsum-search">
+                                        <label for="paragraphs">Body Section</label>
+                                        <div class="fields">
+                                            <textarea type="text" name="AdditionalBodySection" rows="10" ng-model="vm.Model.AdditionalBodySection"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="ipsum-search">
+                                        <label for="paragraphs">Footer Section</label>
+                                        <div class="fields">
+                                            <textarea type="text" name="AdditionalFooterSection" rows="10" ng-model="vm.Model.AdditionalFooterSection"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="CookiesPolicy" class="tabcontent">
+                            <h3 >Cookies Policy</h3>
+                            <div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Turn</label>
+                                    <div class="fields">
+                                        <label class="switch">
+                                            <input type="checkbox" checked="checked" ng-model="vm.Model.PolicyTurn">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Title</label>
+                                    <div class="fields">
+                                        <input type="text" name="PolicyTabTitle" ng-model="vm.Model.PolicyTabTitle" />
+                                    </div>
+                                </div>
+                                <div class="ipsum-search">
+                                    <label for="paragraphs">Tab Content</label>
+                                    <div class="fields">
+                                        <textarea class="textarea" name="PolicyTabContent" rows="5" ng-model="vm.Model.PolicyTabContent"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ipsum-search save-button">
+                            <span id="message"></span>
+                            <button id="btnSave" type="button" ng-click="vm.Save(this)">Update Setting</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </umb-box-content>
+    </umb-box>
+</div>

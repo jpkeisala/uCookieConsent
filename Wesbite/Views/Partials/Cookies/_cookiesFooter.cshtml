@@ -1,0 +1,15 @@
+﻿@model Fluid.Plugins.CookieDisclaime.CookieInfo
+
+@if (Model != null && Model.EnableCookieBar)
+{
+    if (Model.ThrdPartyTurn)
+    {
+        @Html.Raw(Model.ThrdPartyFooterSection)
+    }
+
+
+    if (Model.AdditionalTurn)
+    {
+        @Html.Raw(Model.AdditionalFooterSection)
+    }
+}
