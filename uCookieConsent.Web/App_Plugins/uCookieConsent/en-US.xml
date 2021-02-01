@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <area alias="treeHeaders">
+    <key alias="ipsumTreeAlias">Meet the funny ipsums!</key>
+  </area>
+  <area alias="ipsumsTree">
+    <key alias="intro">You can generate some ipsum content here.</key>
+    <key alias="generatebaconipsum">Generate Bacon Ipsum</key>
+    <key alias="generatedinoipsum">Generate Dino Ipsum</key>
+  </area>
+</language>

@@ -3,28 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluid.Plugins.uCookieConsent", "uCookieConsent\Fluid.Plugins.uCookieConsent.csproj", "{830C12CD-0FBB-4ACA-99BD-5B38170A3AF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uCookieConsent.Plugin", "uCookieConsent.Plugin\uCookieConsent.Plugin.csproj", "{830C12CD-0FBB-4ACA-99BD-5B38170A3AF2}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Wesbite", "Wesbite\", "{FABDECE2-FA1B-4204-9ADF-43203272C718}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_62091"
-		Debug.AspNetCompiler.PhysicalPath = "Wesbite\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62091\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_62091"
-		Release.AspNetCompiler.PhysicalPath = "Wesbite\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62091\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "62091"
-		SlnRelativePath = "Wesbite\"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uCookieConsent.Web", "uCookieConsent.Web\uCookieConsent.Web.csproj", "{EFAE87FA-2263-4038-B717-4E53FC37DB93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,10 +17,10 @@ Global
 		{830C12CD-0FBB-4ACA-99BD-5B38170A3AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830C12CD-0FBB-4ACA-99BD-5B38170A3AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{830C12CD-0FBB-4ACA-99BD-5B38170A3AF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FABDECE2-FA1B-4204-9ADF-43203272C718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FABDECE2-FA1B-4204-9ADF-43203272C718}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FABDECE2-FA1B-4204-9ADF-43203272C718}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{FABDECE2-FA1B-4204-9ADF-43203272C718}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EFAE87FA-2263-4038-B717-4E53FC37DB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAE87FA-2263-4038-B717-4E53FC37DB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAE87FA-2263-4038-B717-4E53FC37DB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAE87FA-2263-4038-B717-4E53FC37DB93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ClientDependency.Core.Mvc
+@{
+    Layout = null;
+
+  Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js", 1);
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @Html.RenderCssHere()
+
+    @Html.RenderJsHere()
+</head>
+<body class="myBody">
+    @RenderBody()
+    @Html.Action("Body", "CookieBanner")
+</body>
+</html>

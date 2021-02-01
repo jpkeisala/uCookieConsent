@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>uCookieConsent</id>
+        <version>1.0.1</version>
+        <authors>Jukka-Pekka Keisala</authors>
+        <owners>Jukka-Pekka Keisala</owners>
+        <projectUrl>https://github.com/jpkeisala/uCookieConsent</projectUrl>
+        <license type="expression">MIT</license>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>plugin for Cookie Consent in Umbraco website</description>
+        <releaseNotes>
+		- plugin
+		-Cookie Consent
+		-Umbraco
+		</releaseNotes>
+        <copyright>Copyright ©2021</copyright>
+        <tags>plugin Cookie Consent Umbraco</tags>
+    </metadata>
+    <files>
+        <file src="App_Plugins\uCookieConsent\**\*.*" target="content\App_Plugins\uCookieConsent" />
+		<file src="Views\**\*.*" target="content\Views" />
+        <file src="readme.txt" target="" />
+    </files>
+</package>
