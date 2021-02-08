@@ -235,6 +235,8 @@
   <ItemGroup>
     <Content Include="App_Plugins\uCookieConsent\backoffice\cookiesAlias\cookies.css" />
     <Content Include="App_Plugins\uCookieConsent\backoffice\cookiesAlias\cookies.js" />
+    <Content Include="App_Plugins\uCookieConsent\backoffice\cookiesAlias\lity.css" />
+    <Content Include="App_Plugins\uCookieConsent\backoffice\cookiesAlias\lity.js" />
     <Content Include="App_Plugins\uCookieConsent\backoffice\cookiesAlias\overview.controller.js" />
     <Content Include="App_Plugins\uCookieConsent\backoffice\cookiesAlias\overview.css" />
     <Content Include="App_Plugins\uCookieConsent\backoffice\cookiesAlias\overview.html" />
@@ -247,7 +249,6 @@
     <None Include="app.config" />
     <None Include="App_Plugins\uCookieConsent\package.manifest" />
     <None Include="packages.config" />
-    <None Include="uCookieConsent.Plugin.nuspec" />
     <None Include="Views\Partials\Cookies\_cookiesBody.cshtml" />
     <None Include="Views\Partials\Cookies\_cookiesFooter.cshtml" />
     <None Include="Views\Partials\Cookies\_cookiesHeader.cshtml" />

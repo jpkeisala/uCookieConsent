@@ -1047,8 +1047,8 @@
                                 }))
                         }
                     }, "undefined" == typeof lity && "true" === uCookie_frontend_gdpr_scripts.load_lity) {
-                        var N = uCookie_frontend_gdpr_scripts.plugin_dir + "/scripts/lity.js",
-                            I = uCookie_frontend_gdpr_scripts.plugin_dir + "/css/lity.css";
+                        var N = uCookie_frontend_gdpr_scripts.plugin_dir + "/backoffice/cookiesAlias/lity.js",
+                            I = uCookie_frontend_gdpr_scripts.plugin_dir + "/backoffice/cookiesAlias/lity.css";
                         postscribe(document.body, '<script src="' + N + '"><\/script>'), postscribe(document.head, '<link href="' + I + '" rel="stylesheet">')
                     }
                     var O = "",

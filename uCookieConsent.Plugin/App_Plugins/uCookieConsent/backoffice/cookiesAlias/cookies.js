@@ -1047,8 +1047,8 @@
                                 }))
                         }
                     }, "undefined" == typeof lity && "true" === uCookie_frontend_gdpr_scripts.load_lity) {
-                        var N = uCookie_frontend_gdpr_scripts.plugin_dir + "/scripts/lity.js",
-                            I = uCookie_frontend_gdpr_scripts.plugin_dir + "/css/lity.css";
+                        var N = uCookie_frontend_gdpr_scripts.plugin_dir + "/backoffice/cookiesAlias/lity.js",
+                            I = uCookie_frontend_gdpr_scripts.plugin_dir + "/backoffice/cookiesAlias/lity.css";
                         postscribe(document.body, '<script src="' + N + '"><\/script>'), postscribe(document.head, '<link href="' + I + '" rel="stylesheet">')
                     }
                     var O = "",
@@ -1224,19 +1224,10 @@ function LoadCookies() {
                     break;
                 }
             }
-            
-            //if (cookies.thirdparty == "1") {
+
             jQuery.get("/umbraco/api/CookieData/get/1", function (res) {
-                console.log(res);
-                //AdditionalBodySection: ""
-                //AdditionalFooterSection: ""
-                //AdditionalHeaderSection: "1223123123"
 
-                //ThrdPartyBodySection: ""
-                //ThrdPartyFooterSection: ""
-                //ThrdPartyHeaderSection: ""
-
-                if (cookies.thirdparty == "1") {
+                if (cookies != null && cookies.thirdparty == "1") {
                     if (res.ThrdPartyHeaderSection != "" && res.ThrdPartyHeaderSection != null) {
                         postscribe(document.head, res.ThrdPartyHeaderSection);
                     }
@@ -1244,7 +1235,7 @@ function LoadCookies() {
                     if (res.ThrdPartyBodySection != "" && res.ThrdPartyBodySection != null) {
                         $(res.ThrdPartyBodySection).prependTo(document.body);
                     }
-                    
+
                     if (res.ThrdPartyFooterSection != "" && res.ThrdPartyFooterSection != null) {
                         postscribe(document.body, res.ThrdPartyFooterSection);
                     }
@@ -1253,7 +1244,6 @@ function LoadCookies() {
 
                 myIndex++;
             });
-            // }
         }
     }
 }
