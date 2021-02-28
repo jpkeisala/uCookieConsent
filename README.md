@@ -3,4 +3,4 @@ The uCookieConsent helps you comply with the GDPR (https://gdpr.eu/what-is-gdpr/
 
 ## Nuget
 
-'' Install-Package uCookieConsent ''
+``` Install-Package uCookieConsent ```
