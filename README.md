@@ -8,9 +8,9 @@ The uCookieConsent is Umbraco Package for adding GDPR Cookie Consent & Complianc
 
 Once installed:
 1. Open you master page and add following partial views. You need these for adding cookie dialog and scripts that needs to pass cookie consent:
-   a)  `@Html.Action("Header", "CookieBanner")` before end of your </header> -tag.
-   b) `@Html.Action("Body", "CookieBanner")` after your <body> -tag.
-   c) `@Html.Action("Footer", "CookieBanner")` before end of your </body> -tag.
+⋅⋅⋅`@Html.Action("Header", "CookieBanner")` before end of your </header> -tag.
+⋅⋅⋅`@Html.Action("Body", "CookieBanner")` after your <body> -tag.
+⋅⋅⋅`@Html.Action("Footer", "CookieBanner")` before end of your </body> -tag.
 2. Login to the backoffice and open `https://YOURSERVER/umbraco#/settings/cookiesAlias/overview`. Review settings and texts
 3. Click tab Third Party Cookies and in insert scripts that use cookies for example Google Analytics as instructed.  
 
