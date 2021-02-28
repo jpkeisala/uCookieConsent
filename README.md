@@ -16,5 +16,10 @@ Once installed:
 2. Login to the backoffice and open `https://YOURSERVER/umbraco#/settings/cookiesAlias/overview`. Review settings and texts
 3. Click tab Third Party Cookies and in insert scripts that use cookies for example Google Analytics as instructed.  
 
+# How is this working?
+The Cookie law is actually quite simple. You need to ask permission from the visitor if you want to track the visitor. Just letting know you are tracking is not enough. However, cookies like session cookie is OK.  
+The package will not execute any of the scripts before user approves cookies. You can set from the control panel that necessary cookies are allowed by default but third party cookies like Google Analytics are only executed after consent of your visitor.  
+
+
 # Contributors & Developers
 uCookieConsent Package is open source software. To contribute to the project create pull request in Github. https://github.com/jpkeisala/uCookieConsent/
