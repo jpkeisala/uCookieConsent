@@ -12,7 +12,7 @@ Once installed:
 2. Click tab Third Party Cookies and in insert scripts that use cookies for example Google Analytics as instructed.  
 
 3. Open you master page and add following partial views. You need these for adding cookie dialog and scripts that needs to pass cookie consent:
-Code: `@Html.Action("Body", "CookieBanner")` after your <body> -tag. 
+  ---Code: `@Html.Action("Body", "CookieBanner")` after your <body> -tag. 
 
 
 # How is this working?
