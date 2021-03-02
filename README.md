@@ -7,14 +7,13 @@ The uCookieConsent is Umbraco Package for adding GDPR Cookie Consent & Complianc
 ``` Install-Package uCookieConsent ```
 
 Once installed:
-1. Open you master page and add following partial views. You need these for adding cookie dialog and scripts that needs to pass cookie consent:
+1. Login to the backoffice and open `https://YOURSERVER/umbraco#/settings/cookiesAlias/overview`. Review settings and texts
 
-- 1. Code: `@Html.Action("Header", "CookieBanner")` before end of your </header> -tag.
-- 2. Code: `@Html.Action("Body", "CookieBanner")` after your <body> -tag. 
-- 3. Code: `@Html.Action("Footer", "CookieBanner")` before end of your </body> -tag.
+2. Click tab Third Party Cookies and in insert scripts that use cookies for example Google Analytics as instructed.  
 
-2. Login to the backoffice and open `https://YOURSERVER/umbraco#/settings/cookiesAlias/overview`. Review settings and texts
-3. Click tab Third Party Cookies and in insert scripts that use cookies for example Google Analytics as instructed.  
+3. Open you master page and add following partial views. You need these for adding cookie dialog and scripts that needs to pass cookie consent:
+Code: `@Html.Action("Body", "CookieBanner")` after your <body> -tag. 
+
 
 # How is this working?
 The Cookie law is actually quite simple. You need to ask permission from the visitor if you want to track the visitor. Just letting know you are tracking is not enough. However, strictly necessary cookies are fine to be on by default. These are cookies that your website or app needs to use in order to perform its basic functions. For example, strictly necessary cookies may be used to remember items placed in a virtual shopping cart or to remember which page a user is on.
