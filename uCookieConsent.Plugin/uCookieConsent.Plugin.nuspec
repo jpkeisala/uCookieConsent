@@ -2,20 +2,18 @@
 <package>
     <metadata>
         <id>uCookieConsent</id>
-        <version>1.0.4</version>
+        <version>1.0.11</version>
         <authors>Jukka-Pekka Keisala</authors>
         <owners>Jukka-Pekka Keisala</owners>
         <projectUrl>https://github.com/jpkeisala/uCookieConsent</projectUrl>
         <license type="expression">MIT</license>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>plugin for Cookie Consent in Umbraco website</description>
+        <description>Umbraco package for GDPR Cookie Consent</description>
         <releaseNotes>
-		- plugin
-		-Cookie Consent
-		-Umbraco
-		</releaseNotes>
+          Cookie consent plugin for Umbraco 8.x. Quickly comply with the EU Cookie Law, CCPA, GDPR and other privacy laws.
+        </releaseNotes>
         <copyright>Copyright ©2021</copyright>
-        <tags>plugin Cookie Consent Umbraco</tags>
+        <tags>UmbracoPackage Cookie GDPR Umbraco</tags>
     </metadata>
     <files>
         <file src="App_Plugins\uCookieConsent\**\*.*" target="content\App_Plugins\uCookieConsent" />
