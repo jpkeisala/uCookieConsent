@@ -1,4 +1,5 @@
-https://img.shields.io/badge/Umbraco-v8%20package-brightgreen
+
+[![uCookieConsent](https://img.shields.io/badge/Umbraco-v8%20package-brightgreen)](https://github.com/jpkeisala/uCookieConsent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # What is uCookieConsent Package?
