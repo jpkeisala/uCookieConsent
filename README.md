@@ -1,7 +1,5 @@
 
-[![uCookieConsent](https://img.shields.io/badge/Umbraco-v8%20package-brightgreen)](https://github.com/jpkeisala/uCookieConsent)
-
-![Nuget](https://img.shields.io/nuget/v/uCookieConsent) "Nuget")
+[![uCookieConsent](https://img.shields.io/badge/Umbraco-v8%20package-brightgreen)](https://github.com/jpkeisala/uCookieConsent) ![Nuget](https://img.shields.io/nuget/v/uCookieConsent) 
 
 
 # What is uCookieConsent Package?
