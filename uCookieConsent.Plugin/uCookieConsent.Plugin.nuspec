@@ -2,7 +2,7 @@
 <package>
     <metadata>
         <id>uCookieConsent</id>
-        <version>1.0.14</version>
+        <version>1.0.16</version>
         <authors>Jukka-Pekka Keisala</authors>
         <owners>Jukka-Pekka Keisala</owners>
         <projectUrl>https://github.com/jpkeisala/uCookieConsent</projectUrl>
@@ -15,9 +15,16 @@
         <copyright>Copyright ©2021</copyright>
         <tags>UmbracoPackage GDPR Cookie Umbraco</tags>
     </metadata>
+  <dependencies>
+    <group targetFramework="net472">
+      <dependency id="UmbracoCms.Core" version="8.5.1" />
+      <dependency id="UmbracoCms.Web" version="8.5.1" />
+    </group>
+  </dependencies>
+  
   <files>
     <file src="App_Plugins\uCookieConsent\**\*.*" target="content\App_Plugins\uCookieConsent" />
-    <file src="bin\Release\Fluid.Plugins.uCookieConsent.dll" target="lib\net472\Fluid.Plugins.uCookieConsent.dll" />
+    <file src="bin\Release\Fluid.Plugins.uCookieConsent.dll" target="lib\net472" />
     <file src="Views\**\*.*" target="content\Views" />
     <file src="readme.txt" target="" />
   </files>
